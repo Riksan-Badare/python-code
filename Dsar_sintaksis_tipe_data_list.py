@@ -27,3 +27,28 @@ print('\nTambahkan 1 buku baru')
 daftar_buku.append('Lovasket')
 for i in range (0, len(daftar_buku)):
     print(daftar_buku[i])
+
+print('\nMenghapus list')
+daftar_buku.clear()
+for i in range (0, len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nMengubah isi pertama dalam suatu list/array')
+daftar_buku = ['Seven Habits','How to Influence People','First Things First', '4DX']
+daftar_buku[0] = 'The Witcher'
+for i in range (0, len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nAmbil elemen ke dua')
+buku = daftar_buku.pop(1)
+for i in range (0, len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nBuku yang diambil tadi')
+print(buku)
+
+print('\nPop, diambil tanpa variabel jadi isi list terakhir yang diambil')
+daftar_buku = ['Seven Habits','How to Influence People','First Things First', '4DX']
+daftar_buku.pop(-1)
+for i in range (0, len(daftar_buku)):
+    print(daftar_buku[i])
