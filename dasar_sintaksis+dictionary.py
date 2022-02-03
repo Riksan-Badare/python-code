@@ -27,8 +27,11 @@ print(users["address"]["geo"]["lng"])
 print(users)
 print(type(users))#cek tipe data
 print("'nUbah dict ke Json")
-import json
+import json #ubah python dict ke json
 result = json.dumps(users)
 print(type(result))#cek tipe data
 print(result)
+
+with open('result.json', 'w') as file:
+    json.dump(users, file)
 
